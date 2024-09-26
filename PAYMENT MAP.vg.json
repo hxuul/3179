@@ -42,7 +42,7 @@
 
     {
       "data": {
-        "url": "map.json",
+        "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/map.json",
         "format": {"type": "topojson", "feature": "graticules"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "gray"}
@@ -50,7 +50,7 @@
     
     {
       "data":{
-        "url": "map.json",
+        "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/map.json",
             "format": {
               "type": "topojson",
               "feature": "data"
@@ -69,7 +69,7 @@
     
     {
       "data":{
-        "url": "map.json",
+        "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/map.json",
             "format": {
               "type": "topojson",
               "feature": "data"
@@ -83,7 +83,7 @@
           "lookup": "properties.shape1",
           "from":{
             "data":{
-              "url": "PAYMENT.csv",
+              "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/PAYMENT.csv",
               "format":{
                 "type": "csv"
               }
@@ -129,7 +129,7 @@
     },
     {
       "data": {
-        "url": "CITIES.csv",
+        "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/CITIES.csv",
         "format": {"type": "csv"}
       },
       "transform": [
