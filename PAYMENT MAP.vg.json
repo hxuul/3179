@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1500,
+  "width": 1700,
   "height": 750,
   "title": "Payments Count by State",
   "projection": {"type": "mercator"},
@@ -39,7 +39,6 @@
   
   "layer": [
     
-
     {
       "data": {
         "url": "https://raw.githubusercontent.com/hxuul/3179/refs/heads/main/map.json",
@@ -94,11 +93,13 @@
                 "TopPayment",
                 "SecondTopPayment",
                 "ThirdTopPayment",
-                "AUState"
+                "AUState",
+                "StatePopulation"
                 
-            ]
+            ]}
           }
-        }
+          
+        
       ],
       
 
@@ -123,7 +124,8 @@
           {"field": "TopPayment", "type": "nominal", "title": "Top 1"},
           {"field": "SecondTopPayment", "type": "nominal", "title": "Top 2"},
           {"field": "ThirdTopPayment", "type": "nominal", "title": "Top 3"},
-          {"field": "TotalPayments", "type": "quantitative", "title": "Total Payments"}
+          {"field": "TotalPayments", "type": "quantitative", "title": "Total Payments"},
+          {"field": "StatePopulation", "type": "quantitative", "title": "StatePopulation"}
         ]
       }
     },
