@@ -2,14 +2,17 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1700,
   "height": 750,
-  "title": "Payments Count by State",
+  "title": {
+    "text": "Payments by State in Australia, 2023",
+    "fontSize": 24 
+  },
 
   "projection": {
   "type": "mercator",
   "center": [133, -28],
-  "scale": 1100
+  "scale": 1050
   },
-  
+  "background": "#4d97b7",
   "params": [{
     "name": "state_selection",
     "bind": {
@@ -124,6 +127,7 @@
             "range": ["#f2faf9", "#e6f6f3", "#ccece6", "#99c9c0", "#669d96","#336f68"]
           }
         },
+
         "tooltip": [
           {"field": "properties.shape1", "type": "nominal", "title": "Country"},
           {"field": "TopPayment", "type": "nominal", "title": "Top 1"},
@@ -153,8 +157,8 @@
       "layer": [{
         "mark": {
           "type": "circle",
-          "color": "#7a4a01",
-          "size":20,
+          "color": "#382200",
+          "size":25,
           "opacity": 1
         },
         "encoding":{
